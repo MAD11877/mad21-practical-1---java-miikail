@@ -27,6 +27,42 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+
+    int num = in.nextInt();
+    int numbers[] = new int[num];
+
+    // Loop for number of input
+    for (int n = 0; n < num; n++)
+    {
+      numbers[n] = in.nextInt();
+    }
+
+    int highest = 0;
+    int mode = 0;
+
+    // Loop through array; first number
+    for (int x = 0; x < numbers.length; x++)
+    {
+      int count = 0;
+      
+      // second number
+      for (int y = 0; y < numbers.length; y++)
+      {
+        // if same number, count + 1
+        if (numbers[x] == numbers[y])
+        {
+          count += 1;
+        }
+      }
+
+      // if count is greater than the highest count, update highest and mode
+      if (count > highest)
+      {
+        highest = count;
+        mode = numbers[x];
+      }
+    }
+
+    System.out.println("Mode: " + mode);
   }
 }
