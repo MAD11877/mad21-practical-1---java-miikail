@@ -18,6 +18,20 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
+
+    System.out.println();
+    int userInp = in.nextInt();
     
+    // first loop for collumn
+    for (int x = userInp; x > 0; x--)
+    {      
+      // second loop for row
+      for (int y = x; y > 0; y--)
+      {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+
   }
 }
