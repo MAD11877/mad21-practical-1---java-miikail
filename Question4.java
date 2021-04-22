@@ -21,7 +21,6 @@ public class Question4
 
     System.out.println();
     int userInp = in.nextInt();
-    System.out.println(userInp);
     
     // first loop for collumn
     for (int x = userInp; x > 0; x--)
