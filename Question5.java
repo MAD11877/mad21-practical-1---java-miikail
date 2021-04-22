@@ -63,6 +63,6 @@ public class Question5
       }
     }
 
-    System.out.println("Mode: " + mode);
+    System.out.println(mode);
   }
 }

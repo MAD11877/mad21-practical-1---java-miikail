@@ -19,9 +19,9 @@ public class Question4
      
     Scanner in = new Scanner(System.in);
 
-    System.out.println("Enter integer: ");
+    System.out.println();
     int userInp = in.nextInt();
-    System.out.println("User Input: " + userInp);
+    System.out.println(userInp);
     
     // first loop for collumn
     for (int x = userInp; x > 0; x--)
